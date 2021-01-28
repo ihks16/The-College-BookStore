@@ -1,0 +1,89 @@
+  var firebaseConfig = {
+    apiKey: "AIzaSyDwB6OJJqJiwmSrSKo2oANQfNN4rqQOLyI",
+    authDomain: "bookshop-4b09f.firebaseapp.com",
+    databaseURL: "https://bookshop-4b09f.firebaseio.com",
+    projectId: "bookshop-4b09f",
+    storageBucket: "bookshop-4b09f.appspot.com",
+    messagingSenderId: "264769852546",
+    appId: "1:264769852546:web:7b2df26a7f6554fcd6109b",
+    measurementId: "G-1PF7FX8RNH"
+  };
+
+  
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+
+function signUp()
+   {
+    var email= document.getElementById("email_field").value;
+    var password = document.getElementById("password_field");
+      
+    const promise = auth.createUserwithEmailAndPassword(email.value , password.value);
+    promise.catch( e => alert(e.message));
+    
+    alert("Signed IN" + "  "  + email);
+       
+   }
+
+
+function signIn()
+  {
+    var email= document.getElementById("email_field").value;
+    var password = document.getElementById("password_field");
+      
+    const promise = auth.signiInwithEmailAndPassword(email.value , password.value);
+    promise.catch( e => alert(e.message));
+    
+    alert("Signed IN" + "  "  + email);  
+  }
+
+
+
+
+
+
+
+
+
+
+  // Initialize Firebase
+  /* firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) 
+  {
+    document.getElementById("login_div").style.display = "block";
+    document.getElementById("logout_div").style.display = "none";
+    var user = firebase.auth().currentUser;
+      if(user != null)
+          {
+               var email_id = user.email;
+               document.getElementById("user_para").innerHTML = ("Welcome User : " + email_id);
+          }
+  } 
+    else
+  {
+    // No user is signed in.
+      document.getElementById("login_div").style.display = "none";
+    document.getElementById("logout_div").style.display = "block";
+  }
+});
+
+function login()
+{
+    var userEmail = document.getElementById("email_field").value;
+    var userPassword = document.getElementById("password_field").value;
+    firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert("Error : " + errorMessage);
+});
+}
+
+function logout()
+{
+     firebase.auth().signOut();
+}
+*/ 

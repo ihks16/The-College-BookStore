@@ -1,0 +1,83 @@
+body
+{
+    background-color: #c5c5c5;
+    padding:0px;
+    margin: 0px; 
+    background-image:url(../Images/background-opacity.png);
+    background-size: cover;
+} 
+.nav
+{   
+    background-color: #363638;
+    padding: 0px;
+    height: 50px;
+    width:auto;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.logo
+{   
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 440px;
+}
+
+.sq_box
+{
+    background-color: #363638;
+    margin: 100px 400px 40px 400px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    color: white;
+}
+
+input[type=email], input[type=password], input[type=reset] , input[type=text]
+{
+  background-color: #ffffff;
+  border: solid;
+  border-width: 3px;
+  border-radius: 30px;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.25s;
+}
+
+input[type=email]:focus , input[type=password]:focus , input[type=text]:focus
+{
+   width: 500px; 
+   border-color:white;
+}
+
+
+label
+{
+    font-size: 25px;
+}
+
+button 
+{
+    margin-left: 10px;
+    padding:10px 20px 10px 20px;
+    border-radius: 20px;
+    color:red;
+    font-size: 15px;
+    background-color:white;
+    border-color: black;
+    border-width: 3px;
+    transition: 0.25s;   
+    cursor: pointer;
+}
+button:hover
+{
+   background-color: deepskyblue;
+   border-color:deepskyblue;
+   color:black;
+}

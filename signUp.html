@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit=no>
+      <meta name="author" content="Harsh Kumar Sharma">	
+	  <meta name="description" content="BookShop For Second Hand books For College Level">	
+	  <meta name="keywords" content="BookShop , Second Hand">
+	  <meta charset="UTF-8">
+      <title>ICEM Book Shop</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="CSS/signUp.css">
+ </head>
+ <body> 
+         <div class="nav">
+                <div class="logo">
+                  <a href="#">
+                      <img src="Images/logo_main.JPG" style="height: 40px ; width: 40px"></a>
+                  <a href="signIn.html"><p style="margin:0px; font-size:35px ; color: #ffffff; display:inline-block; position: absolute">COLLEGE BOOKSTORE</p>
+                  </a>
+                </div>
+                <div class="nav-menu">
+                    <!-- Space for navigation menu -->
+                </div>
+            
+         </div>
+         <div class="sq_box">
+            <center>
+                <h1 style="color: white;">Welcome to THE COLLEGE BOOKSTORE</h1>
+                <h1 style="color: white;">Sign Up</h1>
+                <p>Register here to be a part of US.</p>
+            </center> 
+             <div style="padding:20px 0px 0px 140px; font-size: 20px;" id="form">
+                <form method="POST" action="PHP/signUp.php">
+                 <label for="text">Name</label><br>
+                 
+                 <input type='text' placeholder="Full Name" id="name" name="name"><br>
+                 
+                 <label for="text">Age</label><br>
+                 
+                 <input type='text' placeholder="Age" id="age" name="age"><br>
+             
+                 <label for="email">Email</label><br>
+             
+                 <input type="email" placeholder="Email" id="email" name="email"><br>        
+                 
+                <label for="text">Department</label><br>
+                    <input type="radio" id="computer" name="department">
+                    <label for="computer">Computer Department</label><br>
+                    <input type="radio" id="mechanical" name="department">
+                    <label for="mechanical">Mechanical Department</label><br>
+                    <input type="radio"  id="civil" name="department">
+                    <label for="civil">Civil Department</label><br><br>
+                 
+                 <label for="text">Year</label><br>
+                    <input type="radio" id="FE" name="year">
+                    <label for="computer">FE</label>
+                    <input type="radio" id="SE" name="year">
+                    <label for="mechanical">SE</label>
+                    <input type="radio"  id="TE" name="year">
+                    <label for="civil">TE</label>
+                    <input type="radio"  id="BE" name="year">
+                    <label for="civil">BE</label><br><br>
+                 
+                 <label for="password">Password</label><br>
+                 
+                 <input type='password' placeholder="Password" id="password" name="password"><br>
+                 
+                 <label for="password">Confirm Password</label><br>
+                 
+                 <input type='password' placeholder="Confirm Password" id="con_password" name="password"><br>
+                 <br><br>
+                 <button type="submit" name="submit"><b>Submit</b></button><br><br>
+                </form>
+             </div>
+         </div> 
+ </body>
+</html>
